@@ -1,0 +1,5 @@
+[dependencies]
+grade = { path = "../lib-grade/src" }
+
+# own package
+uuid = { path = "src" }
