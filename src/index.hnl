@@ -4,7 +4,7 @@
 --- `uuid-c` and `uuid-stub` implement the same interface, selected by
 --- platform configuration.
 
-from "../grade" import { Grade }
+from "grade" import { Grade }
 
 --- @template Uuid
 --- Grade for effectful v4 UUID generation.
