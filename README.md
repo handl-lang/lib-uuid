@@ -23,3 +23,7 @@ The `.hnl` sources are not covered by `cargo`; `hnl typecheck` / `lint` /
 ```bash
 HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
 ```
+
+## License
+
+MIT.
