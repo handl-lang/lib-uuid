@@ -2,23 +2,16 @@
 
 UUID port types for the Handl platform.
 
-Part of the `handl-lang` org split (ADR-0128). History is a `git subtree
-split` of `platform/handl-packages/uuid/`.
-
 ## Layout
 
 ```text
 src/        the .hnl sources
-pkg.hnl     dependencies, when the package has any:
-            `{ deps: { <name>: "branch:<ref>" } }`
+pkg.hnl     package manifest — modules, deps, description, license
+scripts/hnl-gate.sh   the gate
+ci.sh       bupha entry
 ```
 
-Dependencies: none
-
 ## Gate
-
-The `.hnl` sources are not covered by `cargo`; `hnl typecheck` / `lint` /
-`test` is their gate, run in CI and available locally:
 
 ```bash
 HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
