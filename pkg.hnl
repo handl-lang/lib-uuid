@@ -1,3 +1,3 @@
 -- lib-uuid: modules this package provides (entry defaults to
 -- src/index.hnl; N modules resolve to src/<name>/index.hnl).
-{ modules: ["uuid"], deps: { type: "branch:main" }, description: "UUID port types for the Handl platform.", license: "MIT" }
+{ modules: ["uuid"], name: "uuid", deps: { type: "branch:main" }, description: "UUID port types for the Handl platform.", license: "MIT" }
