@@ -1,3 +1,32 @@
+# lib-uuid
+
+UUID **port types** for the Handl platform — the contract side of
+the port/impl split. Backends `uuid-c` (native over C) and
+`uuid-stub` (deterministic, for tests) implement it.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the contract |
+| `pkg.hnl` | manifest — `modules: ["uuid"]`, dep `type` |
+| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+
+## Contract
+
+- Port types for UUID generation/parsing; see `src/index.hnl` for the
+  signature surface.
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
