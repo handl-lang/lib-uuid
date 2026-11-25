@@ -10,7 +10,7 @@ the port/impl split. Backends `uuid-c` (native over C) and
 | --- | --- |
 | `src/index.hnl` | the contract |
 | `pkg.hnl` | manifest — `modules: ["uuid"]`, dep `type` |
-| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+| `scripts/hnl-gate.sh`, `workflows/gate.yaml` | the gate / bupha entry |
 
 ## Contract
 
